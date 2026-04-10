@@ -1,14 +1,14 @@
 ﻿const STORAGE_KEY = 'shadowlive-current-user';
 
 const STATIC_CLANS = [
-  { icon: '🦎', name: 'Lizard Core', members: '33.6K' },
-  { icon: '🤡', name: 'Pixel Circus', members: '17.3K' },
-  { icon: '🍌', name: 'Banana Raid', members: '14.3K' },
-  { icon: '🍅', name: 'Red Pulse', members: '11.9K' },
-  { icon: '👾', name: 'Void Arcade', members: '10.6K' },
-  { icon: '💀', name: 'Skull House', members: '10.1K' },
-  { icon: '😎', name: 'Cool Face', members: '8.9K' },
-  { icon: '👀', name: 'Night Watch', members: '8.3K' }
+  { icon: '🦎', name: 'Lizard Core', members: '0' },
+  { icon: '🤡', name: 'Pixel Circus', members: '0' },
+  { icon: '🍌', name: 'Banana Raid', members: '0' },
+  { icon: '🍅', name: 'Red Pulse', members: '0' },
+  { icon: '👾', name: 'Void Arcade', members: '0' },
+  { icon: '💀', name: 'Skull House', members: '0' },
+  { icon: '😎', name: 'Cool Face', members: '0' },
+  { icon: '👀', name: 'Night Watch', members: '0' }
 ];
 
 const FALLBACK_TAGS = [
