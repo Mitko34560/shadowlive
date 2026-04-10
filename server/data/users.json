@@ -1,0 +1,30 @@
+﻿[
+  {
+    "id": 1,
+    "username": "admin",
+    "email": "admin@shadowlive.local",
+    "password": "123456",
+    "avatar": "",
+    "bio": "Основател на ShadowLive и пазител на нощния feed.",
+    "createdAt": "2026-04-01T18:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "username": "nova",
+    "email": "nova@shadowlive.local",
+    "password": "123456",
+    "avatar": "",
+    "bio": "Нощни рейдове, клипове и мемета след полунощ.",
+    "createdAt": "2026-04-02T20:30:00.000Z"
+  },
+  {
+    "id": 3,
+    "username": "glitch",
+    "email": "glitch@shadowlive.local",
+    "password": "123456",
+    "avatar": "",
+    "bio": "Пиша ботове, ловя бъгове и не излизам от чата.",
+    "createdAt": "2026-04-03T09:45:00.000Z"
+  }
+]
+

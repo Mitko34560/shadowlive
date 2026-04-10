@@ -1,0 +1,14 @@
+[
+  {
+    "id": 2,
+    "userId": 2,
+    "content": "Кой влиза довечера за ranked? Пуснах нов setup и искам тестове.",
+    "createdAt": "2026-04-06T21:40:00.000Z"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "content": "Добавих си още един night mode монитор. Сега вече debugging-ът е истински cinematic.",
+    "createdAt": "2026-04-07T08:20:00.000Z"
+  }
+]

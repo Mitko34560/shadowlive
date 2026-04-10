@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShadowLive</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <div class="site-shell">
+      <section id="authView" class="auth-screen">
+        <div class="auth-brand-center">ShadowLive</div>
+
+        <div class="auth-panel">
+          <form id="loginForm" class="auth-form auth-form-active">
+            <div class="auth-panel-head">
+              <h1>Вход</h1>
+              <p>Пожалуйста, введите ваши данные</p>
+            </div>
+
+            <label class="auth-field">
+              <span>E-Mail</span>
+              <div class="auth-input-shell">
+                <input id="loginUsername" type="text" autocomplete="username" placeholder="admin@shadowlive.local" required />
+                <span class="auth-input-badge">•••</span>
+              </div>
+            </label>
+
+            <label class="auth-field">
+              <span>Пароль</span>
+              <div class="auth-input-shell">
+                <input id="loginPassword" type="password" autocomplete="current-password" required />
+                <span class="auth-input-badge">•••</span>
+                <button class="auth-eye-button" type="button" data-toggle-password="loginPassword">◉</button>
+              </div>
+            </label>
+
+            <button id="forgotPasswordBtn" class="auth-link auth-link-right" type="button">Забыли пароль?</button>
+            <button class="auth-submit-button" type="submit">Войти</button>
+
+            <p class="auth-switch-text">
+              Еще нет аккаунта?
+              <button class="auth-link" type="button" data-auth-mode="register">Создать аккаунт</button>
+            </p>
+          </form>
+
+          <form id="registerForm" class="auth-form hidden">
+            <div class="auth-panel-head">
+              <h1>Регистрация</h1>
+              <p>Создайте новый аккаунт для ShadowLive</p>
+            </div>
+
+            <label class="auth-field">
+              <span>E-Mail</span>
+              <div class="auth-input-shell">
+                <input id="registerEmail" type="email" maxlength="120" placeholder="new@shadowlive.local" required />
+                <span class="auth-input-badge">•••</span>
+              </div>
+            </label>
+
+            <label class="auth-field">
+              <span>Логин</span>
+              <div class="auth-input-shell">
+                <input id="registerUsername" type="text" minlength="3" maxlength="24" placeholder="new_user" required />
+                <span class="auth-input-badge">•••</span>
+              </div>
+            </label>
+
+            <label class="auth-field">
+              <span>Пароль</span>
+              <div class="auth-input-shell">
+                <input id="registerPassword" type="password" minlength="4" maxlength="64" required />
+                <span class="auth-input-badge">•••</span>
+                <button class="auth-eye-button" type="button" data-toggle-password="registerPassword">◉</button>
+              </div>
+            </label>
+
+            <button class="auth-submit-button" type="submit">Создать аккаунт</button>
+
+            <p class="auth-switch-text">
+              Уже есть аккаунт?
+              <button class="auth-link" type="button" data-auth-mode="login">Войти</button>
+            </p>
+
+            <p class="auth-demo-note">Demo: admin@shadowlive.local / 123456</p>
+          </form>
+        </div>
+      </section>
+
+      <section id="appView" class="app-layout hidden">
+        <aside class="sidebar">
+          <div>
+            <div class="sidebar-brand">
+              <div class="sidebar-logo">ShadowLive</div>
+              <span class="sidebar-version">v1.1</span>
+            </div>
+
+            <nav id="sidebarNav" class="sidebar-nav">
+              <button class="nav-item active" data-page="feed" type="button">
+                <span class="nav-icon">◫</span>
+                <span>Лента</span>
+              </button>
+              <button class="nav-item" data-page="search" type="button">
+                <span class="nav-icon">⌕</span>
+                <span>Търсене</span>
+              </button>
+              <button class="nav-item" data-page="event" type="button">
+                <span class="nav-icon icon-event">✺</span>
+                <span>Ивент</span>
+              </button>
+              <button class="nav-item" data-page="notifications" type="button">
+                <span class="nav-icon">◔</span>
+                <span>Известия</span>
+              </button>
+              <button class="nav-item" data-page="profile" type="button">
+                <span class="nav-icon">◉</span>
+                <span>Профил</span>
+              </button>
+            </nav>
+          </div>
+
+          <div class="sidebar-footer">
+            <div class="club-pill">ShadowLive</div>
+            <button id="logoutBtn" class="nav-item nav-logout" type="button">
+              <span class="nav-icon">↪</span>
+              <span>Изход</span>
+            </button>
+          </div>
+        </aside>
+
+        <main class="main-column">
+          <header id="pageHeader" class="page-header"></header>
+          <section id="mainContent" class="main-content"></section>
+        </main>
+
+        <aside class="rail">
+          <div class="rail-footer">
+            <a href="#" class="rail-link">Статус сървъри</a>
+            <a href="#" class="rail-link">Условия за ползване</a>
+            <a href="#" class="rail-link">Поверителност</a>
+            <a href="#" class="rail-link">Политика за Cookies</a>
+            <p class="rail-copy">© 2026 ShadowLive</p>
+          </div>
+        </aside>
+      </section>
+    </div>
+
+    <div id="chatModal" class="modal hidden">
+      <div class="modal-overlay" data-action="close-chat"></div>
+      <div class="modal-panel">
+        <div id="chatHeader" class="chat-modal-header"></div>
+        <div id="chatMessages" class="chat-modal-messages"></div>
+        <form id="messageForm" class="chat-modal-form">
+          <input
+            id="messageInput"
+            type="text"
+            maxlength="500"
+            placeholder="Напиши лично съобщение"
+            required
+          />
+          <button class="primary-button" type="submit">Изпрати</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+

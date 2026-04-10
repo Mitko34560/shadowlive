@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "fromUserId": 1,
+    "toUserId": 2,
+    "content": "Пусни линк за лобито, когато сте готови.",
+    "createdAt": "2026-04-06T22:10:00.000Z"
+  },
+  {
+    "id": 2,
+    "fromUserId": 2,
+    "toUserId": 1,
+    "content": "След 10 минути сме вътре. Ще пиша тук.",
+    "createdAt": "2026-04-06T22:12:00.000Z"
+  },
+  {
+    "id": 3,
+    "fromUserId": 3,
+    "toUserId": 1,
+    "content": "Ако искаш, мога да ти дам script за backup на JSON данните.",
+    "createdAt": "2026-04-07T09:05:00.000Z"
+  },
+  {
+    "id": 4,
+    "fromUserId": 1,
+    "toUserId": 3,
+    "content": "аудс",
+    "createdAt": "2026-04-07T14:59:30.279Z"
+  },
+  {
+    "id": 5,
+    "fromUserId": 1,
+    "toUserId": 2,
+    "content": "ок",
+    "createdAt": "2026-04-07T14:59:44.257Z"
+  },
+  {
+    "id": 6,
+    "fromUserId": 1,
+    "toUserId": 3,
+    "content": "пупсик недоделаны",
+    "createdAt": "2026-04-07T16:27:56.747Z"
+  }
+]
